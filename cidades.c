@@ -88,7 +88,7 @@ double calcularMenorVizinhanca(const char *nomeArquivo) {
 
     for (int i = 0; i < estrada->N - 1; i++) {
         // Calculando a média das distâncias entre cidades adjacentes
-        double vizinhanca = (estrada->C[i+1].Posicao - estrada->C[i].Posicao) / 2.0;
+        double vizinhanca = (estrada->C[i+1].Posicao - estrada->C[i].Posicao);
         if (vizinhanca < menor_vizinhanca) {
             menor_vizinhanca = vizinhanca;
         }
